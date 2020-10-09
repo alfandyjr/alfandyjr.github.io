@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Bilangan Fibonacci</title>
+    <script>
+    console.log("Hi, ini kode Javascript");
+    </script>
+<body>
+    <h4>Bilangan Fibonacci</h4>
+    <script>
+        var n = parseInt(window.prompt("Masukkan n: "))
+        var a = 1, b = 0, temp;
+
+        while (n >= 0) {
+            temp = a;
+            a = a + b;
+            document.write(b + " ")
+            b = temp;
+            n--;
+        }
+    </script>
+</body>
+
+</html>

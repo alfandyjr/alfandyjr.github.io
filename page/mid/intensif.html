@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Latihan</h1>
+    <script>
+        var totalSks = 7;
+        var totalIntensifDasar = 0;
+        var totalIntensifLebih = 0;
+        var intensifLebih = 0;
+        var sum = 0;
+        var denda = 0;
+
+        if (totalSks == 8){
+            totalIntensifDasar = totalSks * 200;
+            document.write('Total intensif dasar = $' + totalIntensif + ', Tidak mendapat intensif lebih' + '<br>');
+        }
+        else if (totalSks < 8){
+            denda = totalSks * 200;
+            document.write('Total Denda = $ ' + denda + '<br>');
+            document.write('Anda tidak mendapatkan intensif dasar!' + '<br>')
+        }
+        else {
+            intensifLebih = totalSks % 8;
+            totalIntensifDasar = (8 * 200);
+            totalIntensifLebih = (intensifLebih * 100);
+            sum = totalIntensifDasar + totalIntensifLebih;
+            document.write('Total intensif dasar = $ ' + totalIntensifDasar + '<br>');
+            document.write('Total intensif lebih = $ ' + totalIntensifLebih + '<br>');
+            document.write('Total intensif = $ ' + sum + '<br>');
+        }
+    </script>
+</body>
+</html>
